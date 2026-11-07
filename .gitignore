@@ -1,0 +1,11 @@
+# Executables
+*.exe
+*.out
+a.out
+librairie
+
+# Fichiers objets
+*.o
+
+# Donnees generees par le programme
+*.dat
