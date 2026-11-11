@@ -144,7 +144,7 @@ void suppclients(Client clients[]) {
         clients[b-1] = clients[b] ;
     }
 
-    clients[MAX_CLIENT].id = 0 ;
+    clients[MAX_CLIENT - 1].id = 0 ;
 
     printf("La suppression a bien été effectuée \n");
 }
@@ -278,7 +278,7 @@ void afficherlesclients(Client clients[] ,  int k) {
     int a ;
 
     if(k<=0) {
-        printf("Aucun livre à afficher \n");
+        printf("Aucun client à afficher \n");
     }
 
 
@@ -342,7 +342,6 @@ void afficherclients(Client clients[]) {
     }
 
 }
-
 
 
 

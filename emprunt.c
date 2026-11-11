@@ -122,7 +122,7 @@ void supprimeremprunt(Emprunt emprunts[] , Livre livres[]) {
                     emprunts[d-1] = emprunts[d] ;
                 }
 
-                emprunts[MAX_EMPRUNT].id_emprunt = 0 ;
+                emprunts[MAX_EMPRUNT - 1].id_emprunt = 0 ;
 
                 printf("La suppression a bien été effectuée \n");
                 e ++ ;
@@ -185,7 +185,7 @@ void affichnbreemprunt (Emprunt emprunts[]) {
     int a ;
     a = compteemprunt(emprunts) ;
 
-    printf("%d emprunts ont été effectués", a);
+    printf("%d emprunts ont été effectués \n", a);
 
 }
 
@@ -212,7 +212,7 @@ void ajouteremprunt(Emprunt emprunts[] , Livre livres[] , Client clients[]) {
     }
 
     else {
-        printf("Ce livre a déjà été emprunté");
+        printf("Ce livre a déjà été emprunté \n");
     }
 
 
@@ -236,9 +236,9 @@ void searchlivreemprunt(Emprunt emprunts[] , Client clients[]) {
         if( (emprunts[b].id_livre == a) && (a != 0))  {
             printf("Ce livre a été emprunté par le client dont l'identifiant est : %d \n", emprunts[b].id_client);
             f = kool(clients , emprunts[b].id_client) ;
-            printf("Identifiant de l'emprunt : %d", emprunts[b].id_emprunt);
-            printf("Nom et prénoms du client : %s %s" , clients[f].nom , clients[f].prenom);
-            printf("Numéro de téléphone du client : %d " , clients[f].tel);
+            printf("Identifiant de l'emprunt : %d \n", emprunts[b].id_emprunt);
+            printf("Nom et prénoms du client : %s %s \n" , clients[f].nom , clients[f].prenom);
+            printf("Numéro de téléphone du client : %d \n " , clients[f].tel);
             d++ ;
             break ;
 
@@ -247,7 +247,7 @@ void searchlivreemprunt(Emprunt emprunts[] , Client clients[]) {
 
 
     if(d == 0) {
-        printf("Ce livre n'a pas été emprunté");
+        printf("Ce livre n'a pas été emprunté \n");
 
     }
 
@@ -267,10 +267,10 @@ void searchclientemprunt(Emprunt emprunts[] , Livre livres[]) {
 
     for(b=0 ; b<c ; b++) {
         if(emprunts[b].id_client == a && a != 0) {
-            printf("Ce client a emprunté le livre ayant pour identifiant : %d " , emprunts[b].id_livre);
+            printf("Ce client a emprunté le livre ayant pour identifiant : %d \n" , emprunts[b].id_livre);
             f = karl(livres , emprunts[b].id_livre) ;
-            printf("Identifiant de l'emprunt : %d" , emprunts[b].id_emprunt);
-            printf("Titre du livre : %s" , livres[f].titre);
+            printf("Identifiant de l'emprunt : %d \n" , emprunts[b].id_emprunt);
+            printf("Titre du livre : %s \n" , livres[f].titre);
             d++ ;
             break ;
 
@@ -280,7 +280,7 @@ void searchclientemprunt(Emprunt emprunts[] , Livre livres[]) {
 
 
     if(d == 0) {
-        printf("Ce client n'a emprunté aucun livre");
+        printf("Ce client n'a emprunté aucun livre \n");
     }
 
 }

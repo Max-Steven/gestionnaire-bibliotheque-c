@@ -321,7 +321,7 @@ void afficherLivrestitre(Livre livres[]) {
 void affichnbretotalLivres(Livre livres[]) {
     int a, c=0 ;
     char b[100] ;
-    printf("Veuillez entrer le titre du livre (Utilisez l'orthographe exacte)");
+    printf("Veuillez entrer le titre du livre (Utilisez l'orthographe exacte) ");
     fgets(b,sizeof(b) ,stdin) ;
     b[strcspn(b,"\n")] = '\0' ;
     for(a=0 ; a<compteLivres(livres) ; a++) {
@@ -340,7 +340,7 @@ void affichnbretotalLivres(Livre livres[]) {
 void affichnbredispoLivres(Livre livres[]) {
     int a, c=0 ;
     char b[100] ;
-    printf("Veuillez entrer le titre du livre (Utilisez l'orthographe exacte)");
+    printf("Veuillez entrer le titre du livre (Utilisez l'orthographe exacte) ");
     fgets(b,sizeof(b) ,stdin) ;
     b[strcspn(b,"\n")] = '\0' ;
     for(a=0 ; a<compteLivres(livres) ; a++) {
@@ -365,7 +365,7 @@ void suppLivres(Livre livres[]) {
     for(b=a+1 ; b<MAX_LIVRES ; b++) {
         livres[b-1] = livres[b] ;
     }
-    livres[MAX_LIVRES].id = 0 ;
+    livres[MAX_LIVRES - 1].id = 0 ;
 
     printf("\nLa suppression a bien été effectuée \n");
 
