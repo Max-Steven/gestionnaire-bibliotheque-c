@@ -294,7 +294,7 @@ void affnbreLivres(Livre livres[]) {
 void afficherLivrestitre(Livre livres[]) {
     int a, c=1 ;
     char b[100] ;
-    printf("Veuillez entrer le titre du livre que vous recherchez (Utilisez l'orthographe exacte)");
+    printf("Veuillez entrer le titre du livre que vous recherchez (Utilisez l'orthographe exacte) \n");
     fgets(b,sizeof(b) ,stdin) ;
     b[strcspn(b,"\n")] = '\0' ;
 
