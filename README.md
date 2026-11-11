@@ -19,9 +19,13 @@ TECHNOLOGIES UTILISÉES
 - GCC
 - Fichiers binaires pour le stockage des données
 
+ 
+
 INSTALLATION ET EXÉCUTION (TERMINAL)
 - Compilation : gcc *.c -o library
 - Exécution : ./library
+
+  
 
 INFORMATIONS ET RECOMMANDATIONS
 - La limite des livres, des clients et des emprunts que l'on peut enregistrer est de 100
@@ -36,4 +40,5 @@ INFORMATIONS ET RECOMMANDATIONS
 
 
 AUTEUR
+
 LOKONHOUNDE Max-Steven Mahuna
