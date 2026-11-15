@@ -2,7 +2,7 @@
 *.exe
 *.out
 a.out
-librairie
+library
 
 # Fichiers objets
 *.o
